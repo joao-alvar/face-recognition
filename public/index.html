@@ -1,15 +1,18 @@
 <style>
-    img{
-        max-width: 45%
-    }
-    canvas{
-        position: absolute;
-    }
+  #container {
+    display: flex;
+    justify-content: center;
+  }
+  canvas {
+    position: absolute;
+  }
 </style>
 
 <canvas id="canvas"></canvas>
 
-<img id="face" src="./images/oldMan1.png" />
+<div id="container">
+  <video id="video-feed" height="560" width="720" autoplay></video>
+</div>
 
 <script src="./face-api.min.js"></script>
 <script src="./scripts.js"></script>
