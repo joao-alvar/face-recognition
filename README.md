@@ -1,10 +1,24 @@
-# Facial Recognition with JavaScript using face-api.js
+![face-api](/public/images/readme-image-example.png)
+
+# Facial Recognition with JavaScript using face-api.js for face detection and face recognition in the browser.
+
+The face expression recognition model is lightweight, fast and provides reasonable accuracy. The model has a size of roughly 310kb and it employs depthwise separable convolutions and densely connected blocks. It has been trained on a variety of images from publicly available datasets as well as images scraped from the web. Note, that wearing glasses might decrease the accuracy of the prediction results.
 
 ### To start up the app:
 
-1. run npm install in the root directory
-2. run node on server.js
+1. run yarn install in the root directory
+2. run yarn start to start node on server.js
 3. go to http://localhost:5000
+
+### Features:
+
+- Age recognition
+
+- Gender recognition
+
+- Mood = Happy, Neutral, Angry, Sad
+
+- Face recognition using Elon Musk as the comparison
 
 ### images in public were generated with fooocus. None are known to have any actual people in them
 
@@ -21,14 +35,6 @@ await Promise.all([
 ]);
 ```
 
-### Stock photos I use, 2 Cristiano Ronaldo and 1 Musk:
-
-- https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg/220px-Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg
-
-- https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Cristiano_Ajax.jpg/170px-Cristiano_Ajax.jpg
+### Stock photos I use, Elon Musk:
 
 - https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg/220px-Elon_Musk_Colorado_2022_%28cropped2%29.jpg
-
-- https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/JordanSmithWorthy2.jpg/170px-JordanSmithWorthy2.jpg
-
-- https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Michael_Jordan_in_2014.jpg/220px-Michael_Jordan_in_2014.jpg
