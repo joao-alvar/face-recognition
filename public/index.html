@@ -1,18 +1,39 @@
-<style>
-  #container {
-    display: flex;
-    justify-content: center;
-  }
-  canvas {
-    position: absolute;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1"
+    />
+    <link rel="stylesheet" href="./globals.css" />
+    <title>Face Recognition</title>
+  </head>
+  <body>
+    <main>
+      <style>
+        #container {
+          display: flex;
+          justify-content: center;
+        }
+        canvas {
+          position: absolute;
+        }
+      </style>
 
-<canvas id="canvas"></canvas>
+      <canvas id="canvas"></canvas>
 
-<div id="container">
-  <video id="video-feed" height="560" width="720" autoplay></video>
-</div>
+      <div id="container" class="video-container">
+        <video
+          id="video-feed"
+          height="680"
+          width="1200"
+          autoplay
+        ></video>
+      </div>
+    </main>
 
-<script src="./face-api.min.js"></script>
-<script src="./scripts.js"></script>
+    <script src="./face-api.min.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
